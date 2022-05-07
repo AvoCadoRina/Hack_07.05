@@ -50,7 +50,8 @@ btnNext.addEventListener("click", () => {
             },
         ];
 
-        console.log(data);
+        let list = JSON.stringify(data);
+        localStorage.setItem("list", list);
     }
 });
 
