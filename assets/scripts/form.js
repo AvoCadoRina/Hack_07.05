@@ -1,4 +1,5 @@
 const btnNext = document.querySelector(".form__btn");
+let data = [];
 
 btnNext.addEventListener("click", () => {
     const firstName = document.querySelector("#firstName");
@@ -6,13 +7,13 @@ btnNext.addEventListener("click", () => {
     const address = document.querySelector("#address");
     const cell = document.querySelector("#cell");
     const email = document.querySelector("#email");
-    const urgent = document.querySelector("#urgent");
+    const urgent = document.querySelector("#urgent").checked;
     const message = document.querySelector("#message");
 
     const errorMessage = document.querySelector("#errorMessage");
     message.innerHTML = "";
 
-    //form validation
+    // form validation
     if (!isFormValid(firstName, age, address, cell, email, message)) {
         errorMessage.innerHTML +=
             "Oops! your are missing something! Please make sure all the info is provided";
@@ -25,6 +26,23 @@ btnNext.addEventListener("click", () => {
             imageHeight: 300,
             imageAlt: "image",
         });
+
+        //adding data to the object:
+        data = [
+            ...data,
+            {
+                name: firstName,
+                age: age,
+                text: message,
+                time: new Date(),
+                urgently: urgent,
+                address: address,
+                phone: cell,
+                email: email,
+            },
+        ];
+
+        console.log(data);
     }
 });
 
