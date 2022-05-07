@@ -55,6 +55,8 @@ const App = {
             console.log('done')
         },
         getList() {
+            let list = JSON.stringify(this.card);
+            localStorage.setItem("list", list);
             let newList =JSON.parse(localStorage.getItem("list"));
             this.cards = newList
         }
