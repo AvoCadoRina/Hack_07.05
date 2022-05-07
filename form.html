@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/form.css">
+    <title>Hi There!</title>
+</head>
+
+<body>
+    <!-- menu -->
+
+    <!-- 
+     Имя
+Возраст
+Описание проблемы
+К какому сроку нужно (число, время)
+Пометка "срочно"
+Адрес
+Телефон
+E-mail
+  -->
+    <!-- form -->
+    <div class="container__form">
+        <form onsubmit="return false">
+
+            <div class="section__one">
+                <img src="assets/form_name.png" class="form__img" alt="img">
+                <div class="form__questions">
+                    <div class="form__input">
+                        <label>Имя
+                            <input class="form__input__question" type="text"  id="firstName" />
+                        </label>
+                    </div>
+
+                    <div class="form__input">
+                        <label>Возраст
+                            <input class="form__input__question" type="number"  id="age" />
+                        </label>
+                    </div>
+                    <div class="form__input">
+                        <label>Адрес
+                                <input class="form__input__question" type="address"  id="address" />
+                            </label>
+                    </div>
+                    <div class="form__input">
+                        <label>Телефон
+                                <input class="form__input__question" type="text"  id="cell" />
+                            </label>
+                    </div>
+                    <div class="form__input">
+                        <label>E-mail
+                                <input class="form__input__question" type="email"  id="email" />
+                            </label>
+                    </div>
+                    <div class="form__input">
+                        <label>Пометка "срочно"
+                            <input class="form__input__question" type="checkbox" id="checkbox" />
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+            <div class="section__two">
+                <div class="form__input">
+                    <label>Описание проблемы </label>
+                    <br/>
+                    <textarea class="form__input__text" cols="50" rows="10" placeholder="Описание проблемы"></textarea>
+                </div>
+                <div class="btn_login">
+                    <button class="form__btn">Далее</button>
+                </div>
+            </div>
+
+
+
+            <div id="errorMessage"></div>
+
+        </form>
+    </div>
+</body>
+
+</html>
