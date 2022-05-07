@@ -1,0 +1,33 @@
+body {
+    background-color: #FFF4E3;
+}
+
+h3 {
+    font-family: raleway;
+    font-size: 40px;
+    color: #fff;
+    margin-top: 43px;
+}
+
+p {
+    font-family: raleway;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+span {
+    font-family: raleway;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+
+.card {
+    background-color: #668C82;
+    max-width: 300px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    border-radius: 3%;
+    text-align: center;
+}
