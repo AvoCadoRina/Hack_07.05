@@ -85,5 +85,11 @@
   width: 318px;
   height: 76px;
   border-radius: 50px;
+  cursor: pointer;
+}
+
+#errorMessage {
+  color: red;
+  font-size: 20px;
 }
 /*# sourceMappingURL=form.css.map */
