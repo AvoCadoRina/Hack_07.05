@@ -11,7 +11,7 @@ btnNext.addEventListener("click", () => {
     const message = document.querySelector("#message");
 
     const errorMessage = document.querySelector("#errorMessage");
-    message.innerHTML = "";
+    errorMessage.innerHTML = "";
 
     // form validation
     if (!isFormValid(firstName, age, address, cell, email, message)) {
@@ -21,7 +21,7 @@ btnNext.addEventListener("click", () => {
         Swal.fire({
             title: "Awesome!",
             text: `${firstName.value} Thank you!`,
-            imageUrl: "https://images.unsplash.com/photo-1600986600826-aa5b82e73a65?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODh8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            imageUrl: "https://images.unsplash.com/photo-1502355984-b735cb2550ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dGhhbmslMjB5b3V8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
             imageWidth: 400,
             imageHeight: 300,
             imageAlt: "image",
