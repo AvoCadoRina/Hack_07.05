@@ -18,6 +18,14 @@ btnNext.addEventListener("click", () => {
         errorMessage.innerHTML +=
             "Oops! your are missing something! Please make sure all the info is provided";
     } else {
+        firstName.value = "";
+        age.value = "";
+        message.value = "";
+        urgent.checked = false;
+        address.value = "";
+        cell.value = "";
+        email.value = "";
+
         Swal.fire({
             title: "Awesome!",
             text: `${firstName.value} Thank you!`,
